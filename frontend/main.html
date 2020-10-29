@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="/style.css" />
+        <meta http-equiv="content-type" content="text-html; charset=utf-8">
+
+        <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+        <!-- TODO: This is slow and is better done as a preprocessing step with node -->
+        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    </head>
+    <body>
+        <div id="columns">
+            <div class="column" id="col-books" >
+                <img class="col-thumbnail" src="/assets/Book.svg" />
+                <div class="ratings-list"></div>
+                <div class="rating-add"></div>
+            </div>
+            <div class="col-separator"></div>
+            <div class="column" id="col-tv">
+                <img class="col-thumbnail" src="/assets/TV.svg" />
+                <div class="ratings-list"></div>
+                <div class="rating-add"></div>
+            </div>
+            <div class="col-separator"></div>
+            <div class="column" id="col-movies">
+                <img class="col-thumbnail" src="/assets/Movie.svg" />
+                <div class="ratings-list"></div>
+                <div class="rating-add"></div>
+            </div>
+        </div>
+        <script src="rating.js" type="text/jsx"></script>
+    </body>
+</html>

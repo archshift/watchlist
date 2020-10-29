@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Playfair+Display:wght@700&display=swap');
+
+body {
+    background-color: #FCFCFC;
+    background-image: url(/assets/subtle_dots/subtle_dots.png);
+    background-blend-mode: multiply;
+    background-repeat: repeat;
+    font-family: 'EB Garamond', serif;
+}
+
+#columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    max-width: 80em;
+    width: 90vw;
+    margin: 4em auto;
+}
+
+.col-separator {
+    width: 1px;
+    align-self: stretch;
+    background-color: gray;
+}
+
+.column {
+    flex: 1;
+    padding: 10px;
+}
+
+.col-thumbnail {
+    display: block;
+    align-self: center;
+    margin: 0 auto 2em;
+    width: 50%;
+    height: 30vh;
+}
+
+.column a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.column .entry {
+    text-align: center;
+    margin: 1em auto;
+    font-size: larger;
+}
+
+.column button {
+    display: block;
+
+    background: none;
+    border: 1px solid lightgray;
+    border-top: none;
+    border-radius: 3pt;
+    font-size: xx-large;
+}
+
+.column button:hover {
+    border: 1px solid gray;
+    border-top: 1px solid lightgray;
+}
+
+.column .button:active {
+    border: 2px solid gray;
+    border-top: 2px solid lightgray;
+}
+
+.column .rating-add {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 90%;
+    margin: auto;
+}
+
+.column .rating-add .form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex: 1;
+    
+    border: 1px solid lightgray;
+    border-top: none;
+    border-radius: 3pt;
+    padding-bottom: 0.5em;
+    padding-top: 1em;
+}
+.column .rating-add .form > * {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+.column input {
+    display: block;
+
+    text-align: center;
+    background: white;
+    border: 1px solid lightgray;
+    border-radius: 3pt;
+    font-family: 'EB Garamond', serif;
+    padding: 0.5em;
+}
+
+.column input:focus {
+    border: 1px solid gray;
+    border-top: 1px solid lightgray;
+}
+
+.star-select {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.star-select a {
+    font-size: x-large;
+    padding: 0 3pt;
+    color: lightgray;
+}
+
+.star-select :hover,
+.star-select :hover ~ * {
+    color: unset;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: lightcoral;
+}
